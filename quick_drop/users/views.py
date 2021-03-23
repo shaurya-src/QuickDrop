@@ -9,17 +9,6 @@ from django.views.generic.base import View
 from .forms import ProfileForm, UserForm
 
 
-# Create your views here.
-# @receiver(post_save, sender=User)
-# def create_profile(sender, instance , created, **kwargs):
-#     if created:
-#         UserProfile.objects.create(user=instance)
-#
-# @receiver(post_save, sender=User)
-# def save_profile(sender, instance , **kwargs):
-#     print(dir(instance))
-#     instance.userprofile.save()
-
 class Index(TemplateView):
     template_name = 'index.html'
 
