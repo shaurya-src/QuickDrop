@@ -22,8 +22,6 @@ class UserForm(ModelForm):
         new_user = User.objects.create_user(self.cleaned_data['username'],
                                             self.cleaned_data['email'],
                                             self.cleaned_data['password'])
-        # new_user.first_name = self.cleaned_data['first_name']
-        # new_user.last_name = self.cleaned_data['last_name']
         if commit:
             new_user.save()
         return new_user
