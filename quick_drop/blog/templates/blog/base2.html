@@ -13,18 +13,23 @@
     <link rel="icon" href="{% static 'blog/img/favicon.png' %}" type="image/png">
     <link rel="stylesheet" href="{% static 'blog/libs/fontawesome/css/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/quick-website.css' %}" id="stylesheet">
+    <link rel="stylesheet" href="{% static 'blog/main.css' %}">
     
     {% if title %}
         <title>QuickDrop - {{title}}</title>
     {% else %}
         <title>QuickDrop</title>
-    {% end if %}
+    {% endif %}
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand font-weight-bold" href="{% url 'blog-home' %}"><i class="fas fa-file"></i> QuickDrop </a>
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img style="height: 80px; width: 250px" alt="Image placeholder" src="{% static 'blog/img/quickdrop.png' %}" id="navbar-logo">
+        </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
