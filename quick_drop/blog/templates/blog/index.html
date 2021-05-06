@@ -91,7 +91,7 @@
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">
-                <img alt="Image placeholder" src="assets/img/brand/dark.svg" id="navbar-logo">
+                <img alt="Image placeholder" src="{% static 'blog/img/icon.svg' %}" id="navbar-logo">
             </a>
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,7 +135,7 @@
                 <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
                     <!-- Image -->
                     <figure class="w-100">
-                        <img alt="Image placeholder" src="assets/img/svg/illustrations/illustration-3.svg" class="img-fluid mw-md-120">
+                        <img alt="Image placeholder" src="{% static 'blog/img/hero.svg' %}" class="img-fluid mw-md-120">
                     </figure>
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
@@ -272,64 +272,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Features - Col 3 -->
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-info text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Animate CSS</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Integrated plugins</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-lg-4">
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Smart HTML markup</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -375,26 +317,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">Account</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Billing</a></li>
-                            <li><a href="#">Notifications</a></li>
-                        </ul>
-                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0"></div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0"></div>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">About</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">Company</h6>
+                        <h6 class="heading mb-3">Links</h6>
                         <ul class="list-unstyled">
                             <li><a href="#">Community</a></li>
                             <li><a href="#">Help center</a></li>
@@ -403,42 +329,17 @@
                     </div>
                 </div>
                 <hr class="divider divider-fade divider-dark my-4">
-                <div class="row align-items-center justify-content-md-between pb-4">
-                    <div class="col-md-6">
-                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Terms
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Cookies
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="pb-1"></div>
             </div>
         </div>
     </footer>
     <!-- Core JS  -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
-    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <script src="{% static 'blog/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'blog/libs/svg-injector/dist/svg-injector.min.js' %}"></script>
+    <script src="{% static 'blog/libs/feather-icons/dist/feather.min.js' %}"></script>
     <!-- Quick JS -->
-    <script src="assets/js/quick-website.js"></script>
+    <script src="{% static 'blog/js/quick-website.js' %}"></script>
     <!-- Feather Icons -->
     <script>
         feather.replace({
