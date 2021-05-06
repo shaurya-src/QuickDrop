@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,10 +57,11 @@
         });
     </script>
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="{% static 'blog/img/favicon.png' %}" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'blog/libs/@fortawesome/fontawesome-free/css/all.min.css' %}">
     <!-- Quick CSS -->
-    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+    <link rel="stylesheet" href="{% static 'blog/css/quick-website.css' %}" id="stylesheet">
 </head>
 
 <body>
