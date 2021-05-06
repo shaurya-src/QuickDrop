@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    
+    <!-- Favicon, Font Awesome, CSS -->
+    <link rel="icon" href="{% static 'blog/img/favicon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'blog/libs/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/quick-website.css' %}" id="stylesheet">
+    <link rel="stylesheet" href="{% static 'blog/main.css' %}">
+    
+    {% if title %}
+        <title>QuickDrop - {{title}}</title>
+    {% else %}
+        <title>QuickDrop</title>
+    {% endif %}
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img style="height: 80px; width: 250px" alt="Image placeholder" src="{% static 'blog/img/quickdrop.png' %}" id="navbar-logo">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'blog-home' %}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+
+            
+          </ul>
+          <!------{{ request.get_host }}/blog/search/-->
+            <form id="searchform" action="{% url 'search' %}" method="get">
+                <input type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Here..." />
+                <button type="button" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
+            </form>
+      
+            {% if user.is_authenticated %}
+            <a href="{% url 'user-posts' user %}" class="btn text-white m-2"><i class="fas fa-user-shield"></i> My Post</a>
+            <a href="{% url 'post-create' %} " class="btn text-white m-2"><i class="fas fa-user-edit"></i> New Post</a>
+            <a href="{% url 'profile' %} " class="btn text-white m-2"><i class="fas fa-user"></i> {{ user.username }}</a>
+            <a href="{% url 'logout' %} " class="btn text-white m-2"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            
+            {% else %}
+            <a href="{% url 'login' %} " class="btn text-white m-2"><i class="fas fa-user-tie"></i> Log In</a>
+           
+            <a href="{% url 'register' %} " class="btn text-white m-2"> <i class="fas fa-sign-in-alt"></i> Sign Up</a>
+            {% endif %}
+          
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    
+    {% block content %}
+      
+    {% endblock  %}
+    
+    <!-- END Main content-->
+    
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- SVG shape -->
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- Footer -->
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        
+                        <!-- Project Logo -->
+                        <a href="index.html">
+                            <img style="height: 80px; width: 250px" alt="Image placeholder" src="{% static 'blog/img/quickdrop.png' %}" id="footer-logo">
+                        </a>
+                        
+                        <!-- Project Description -->
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+                        
+                        <!-- Social Links -->
+                        <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="https://www.shauryasrc.com" target="_blank">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/shaurya-src" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/shaurya_src/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/shaurya.src/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Filler Divs -->
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0"></div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0"></div>
+                    
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="pb-1"></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core JS  -->
+    <script src="{% static 'blog/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/libs/bootstrap/dist/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'blog/libs/svg-injector/dist/svg-injector.min.js' %}"></script>
+    <script src="{% static 'blog/libs/feather-icons/dist/feather.min.js' %}"></script>
+    
+    <!-- Main JS -->
+    <script src="{% static 'blog/js/quick-website.js' %}"></script>
+    
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+</body>
+
+</html>
