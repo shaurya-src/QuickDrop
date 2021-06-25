@@ -11,13 +11,9 @@
 
 <img src="https://github.com/shaurya-src/QuickDrop/blob/main/Documents/Home.png" align="left">
 
-## What is the `Project`?
+## What is `QuickDrop`?
 
-`Project` is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor risus, in ultricies arcu. Donec justo ligula, faucibus sed gravida sit
-amet, pulvinar a leo. Ut porta volutpat sem non tempor. Mauris sit amet arcu vitae justo blandit semper. Ut faucibus vestibulum pulvinar.
-Praesent hendrerit dapibus dolor nec volutpat. Vivamus tristique rutrum convallis. Praesent dignissim sed est ut pharetra. Donec
-hendrerit ante eget lorem aliquet lacinia. Vivamus vel quam ut ante eleifend maximus a in est. Donec id nisi tincidunt, aliquam augue et,
-pretium ligula. Sed gravida in justo id iaculis. Vestibulum at quam a ligula rhoncus fermentum.
+`QuickDrop` is a file sharing platform with absolutely no restrictions! Share files with your friends, family, and co-workers with just a click. It is made as a J-Component Poject for Internet and Web Programming (CSE3002) course at VIT, Vellore under Prof. Malathy E.
 
 ```python
 def main()
