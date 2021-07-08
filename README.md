@@ -15,35 +15,26 @@
 
 `QuickDrop` is a file sharing platform with absolutely no restrictions! Share files with your friends, family, and co-workers with just a click. It is made as a J-Component Poject for Internet and Web Programming (CSE3002) course at VIT, Vellore under Prof. Malathy E.
 
-```python
-def main()
-    text = "Hello World!"
-    return text
-
-if __name__ == '__main__':
-    text = main()
-    print(text)
-```
+View the complete project report from [here](https://github.com/shaurya-src/QuickDrop/blob/main/Documents/18BCE2113_IWP_Final.pdf).
 
 # Features
 
-![RepoSize](https://img.shields.io/github/repo-size/shaurya-src/Web-Automation?logo=GitHub&style=flat-square)
-![License](https://img.shields.io/github/license/shaurya-src/Web-Automation?logo=GitLab&style=flat-square)
-![LastCommit](https://img.shields.io/github/last-commit/shaurya-src/Web-Automation?logo=Git&style=flat-square)
+![RepoSize](https://img.shields.io/github/repo-size/shaurya-src/QuickDrop?logo=GitHub&style=flat-square)
+![License](https://img.shields.io/github/license/shaurya-src/QuickDrop?logo=GitLab&style=flat-square)
+![LastCommit](https://img.shields.io/github/last-commit/shaurya-src/QuickDrop?logo=Git&style=flat-square)
 
 <img src="https://media.giphy.com/media/xT0Gqn9yuw8hnPGn5K/giphy.gif" align="right" width="300" height="300">
 
-- [x] Lorem ipsum dolor sit amet
-- [x] Lorem ipsum dolor sit amet
-- [x] Lorem ipsum dolor sit amet
-- [x] Lorem ipsum dolor sit amet
-- [x] Lorem ipsum dolor sit amet
-- [x] *And More...*
+- [x] 100% Responsive Web Application
+- [x] Unlimmited Upload Size
+- [x] No restrictions on File Type
+- [x] Secure User Authentication
+- [x] Minimal Web Interface
+- [x] Admin Dashboard
 
 # Contents
 
 - [Project Details](#project-info)
-- [Usage](#usage)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Contribute](#contri)
@@ -53,50 +44,31 @@ if __name__ == '__main__':
 
 # <a name="project-info"> Project Details
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor risus, in ultricies arcu. Donec justo ligula, faucibus sed gravida sit
-amet, pulvinar a leo. Ut porta volutpat sem non tempor. Mauris sit amet arcu vitae justo blandit semper. Ut faucibus vestibulum pulvinar.
-Praesent hendrerit dapibus dolor nec volutpat. Vivamus tristique rutrum convallis. Praesent dignissim sed est ut pharetra. Donec
-hendrerit ante eget lorem aliquet lacinia. Vivamus vel quam ut ante eleifend maximus a in est. Donec id nisi tincidunt, aliquam augue et,
-pretium ligula. Sed gravida in justo id iaculis. Vestibulum at quam a ligula rhoncus fermentum.
+  [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/shaurya-src/TumorInsight) [![Made with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/shaurya-src)
 
-In addition, you can also customize the following properties according to the need.
-
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
-
-# <a name="usage"> Usage
-
-1. ***Lorem Ipsum***
-
-`Project` is designed to be easy to use. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-2. ***Lorem Ipsum***
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-3. ***Lorem Ipsum***
-
-Finally, call `func(arg)` in `main()`
-
-```python
-def func(arg):
-    return arg
-
-func(input())
-```
+QuickDrop, is a file sharing Web Application project that comprises of all the needful features and provide a perfect solution for file management within a group. The project uses SQLite3 Database and is built using Django framework. QuickDrop is a lightweight solution and can be easily deployed by users for their personal use cases as well. The users can manage their profile and posts and share with the group without any hassle within seconds.
 
 ## <a name="requirements"> Requirements
 
-- Xcode 10.2.1
-- Swift 5.0
+- Python 3.x
+- Flask
+- Flask SQLAlchemy
 
 ## <a name="installation"> Installation
 
 Follow these steps to use *this project*.
 
 1. Clone the repository.
-2. Lorem ipsum
+2. Open terminal on the project directory.
+3. Run the following commands:
+
+- `python quick_drop/manage.py makemigrations`
+
+- `python quick_drop/manage.py migrate`
+
+- `python quickdrop/manage.py runserver`
+
+4. Open http://localhost:8000 to use the web app.
 
 ## <a name="contri"> Contribute
 
@@ -115,13 +87,12 @@ Any contributions you make are **greatly appreciated**.
   <img src="https://img.shields.io/badge/Editor-VS_Code-success?style=flat-square&logo=Visual-Studio-Code&logoColor=white&color=blue">
   <img src="https://img.shields.io/badge/Windows-10-success?style=flat-square&logo=Windows&logoColor=white">
 
-  <img src="https://img.shields.io/badge/Library-TensorFlow-success?style=flat-square&logo=TensorFlow&logoColor=white">
-  <img src="https://img.shields.io/badge/Library-Matplotlib-success?style=flat-square&logo=GraphQL&logoColor=white&color=purple">
+  <img src="https://img.shields.io/badge/Framework-Flask-success?style=flat-square&logo=flask&logoColor=white">
 </p>
 
 ## <a name="license"> License
 
-*Project* is available under the MIT license. See the [LICENSE](https://github.com/shaurya-src/repo-template/blob/main/LICENSE) file for more info.
+`QuickDrop` is available under the MIT license. See the [LICENSE](https://github.com/shaurya-src/QuickDrop/blob/main/LICENSE) file for more info.
 
 ## <a name="author"> Author
 <!---
